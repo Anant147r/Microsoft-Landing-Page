@@ -6,29 +6,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
+<body class="preload">
     <div class="main">
     <!-- Navbar -->
-    <nav class="main-nav">
-        <img class="logo" src="img/logo.png" alt="">
-        <ul class="main-menu">
+    <!-- Nav1 for document width > 770px -->
+    <nav class="main-nav font-small">
+        <img class="logo" src="im/logo.png" alt="">
+        <ul class="main-menu ">
             <li>Microsoft365</li>
             <li>Office</li>
             <li>Windows</li>
             <li>Surface</li>
             <li>Xbox</li>
             <li>Support</li>
+            
         </ul>
         <a href="#" class="middle-menu">All Microsoft <i class="fas fa-chevron-down"></i></a>
+        
         <div class="right-menu">
             <a href="#"><i class="fas fa-search"></i></a>
             <a href="#"><i class="fas fa-shopping-cart"></i></a>
             <a href="#"><i class="fas fa-user"></i></a>
         </div>
+        
+    </nav>
+
+    <!-- Navbar for document width < 770px -->
+    <nav class="small-nav hide">
+        <ul class="main-menu2 hide">
+            <li>Microsoft365</li>
+            <li>Office</li>
+            <li>Windows</li>
+            <li>Surface</li>
+            <li>Xbox</li>
+            <li>Support</li>
+            <li>More <i class="fas fa-chevron-down"></i></li>
+            <li>Software</li>
+            <li>PCs & Devices</li>
+            <li>Entertainment</li>
+            <li>Business</li>
+            <li>Developer & IT</li>
+            <li>Other</li>
+            <li>View Sitemap</li>
+        </ul>
+        <a href="#"><i class="fas fa-bars nav-icon-bar"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <img src="./im/logo.png" class="logo" alt="">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
     </nav>
     <!-- Section 1 -->
     <div class="heading">
-        <a href="#">
+        <a href="#" class="font-small">
             Read how we're responding to the COVID-19 outbreak,
             and get resources to help 
         </a>
@@ -40,15 +69,15 @@
         <div class="section1 show">
             <div class="section1-contents">
                 <div class="images">
-                    <img src="./img2/photo-of-person-reading-1928151.jpg" alt="">
-                    <img src="./img2/photo-of-person-reading-1928151.jpg" alt="">
+                    <img src="./im/photo-of-person-reading-1928151.jpg" alt="">
+                    <img src="./im/photo-of-person-reading-1928151.jpg" alt="">
                 </div>
                 <div class="inner-contents">
                     <h1>Microsoft Teams - Safe.Secure.Free.</h1>
                     <p>Teams can help you stay productive,no matter 
                         where you are
                     </p>
-                    <a href="#" class="btn">Learn More 
+                    <a href="#" class="btn btn-black">Learn More 
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>
@@ -63,12 +92,12 @@
                     <p>Built-insecurity featuresi include antivirus
                         ,firewall, and internet protections
                     </p>
-                    <a href="#" class="btn">
+                    <a href="#" class="btn btn-white">
                         Buy Now <i class="fas fa-chevron-right"></i>
                     </a>
                 </div>
                 <div class="content2">
-                    <img src="../../img2/photo-of-person-reading-1928151.jpg" alt="">
+                    <img src="./im/photo-of-person-reading-1928151.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -102,51 +131,58 @@
     <section class="section4">
         <div class="contents">
             <div class="content1">
-                <img src="../../img2/woman-in-white-and-brown-floral-dress-4380970.jpg" alt="">
-                <h1>Surface Pro 7</h1>
-                <p>More from the Pro you know. More 
-                    powerful than ever,Surface Pro 7
-                    features a laptop-class Core
-                    processor.
-                </p>
-                <a href="#" class="btn">
-                    Shop now 
-                    <i class="fas fa-chevron-right"></i>
-                </a>
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
+                
+                    <h1>Surface Pro 7</h1>
+                    <p>More from the Pro you know. More 
+                        powerful than ever,Surface Pro 7
+                        features a laptop-class Core
+                        processor.
+                    </p>
+                    <a href="#" class="btn">
+                        Shop now 
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                
             </div>
             <div class="content2">
-                <img src="../../img2/woman-in-white-and-brown-floral-dress-4380970.jpg" alt="">
-                <h1>This is your 365</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <a href="#" class="btn">
-                    Shop now 
-                    <i class="fas fa-chevron-right"></i>
-                </a>
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
+                
+                    <h1>This is your 365</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <a href="#" class="btn">
+                        Shop now 
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                
             </div>
             <div class="content3">
-                <img src="../../img2/woman-in-white-and-brown-floral-dress-4380970.jpg" alt="">
-                <h1>Surface Laptop 3</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fugiat cupiditate mollitia minus voluptatum quia voluptates quibusdam doloremque neque doloribus!
-                </p>
-                <a href="#" class="btn">
-                    For up to 6 people 
-                    <i class="fas fa-chevron-right"></i>
-                </a>
-                <a href="#" class="btn">
-                    Shop now 
-                    <i class="fas fa-chevron-right"></i>
-                </a>
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
+                
+                    <h1>Surface Laptop 3</h1>
+                    <p>Lorem ipsum dolor sit amet!
+                    </p>
+                    <a href="#" class="btn">
+                        For up to 6 people 
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <a href="#" class="btn">
+                        Shop now 
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                
             </div>
             <div class="content4">
-                <img src="../../img2/woman-in-white-and-brown-floral-dress-4380970.jpg" alt="">
-                <h1>Surface Pro X</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi placeat voluptas laborum tempore explicabo beatae?
-                </p>
-                <a href="#" class="btn">
-                    Shop now 
-                    <i class="fas fa-chevron-right"></i>
-                </a>
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
+                    <h1>Surface Pro X</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi placeat voluptas laborum tempore explicabo beatae?
+                    </p>
+                    <a href="#" class="btn">
+                        Shop now 
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                
             </div>
         </div>
     </section>
@@ -160,7 +196,7 @@
                 more productivity and more value while 
                 you browse 
             </p>
-            <a href="#" class="btn">
+            <a href="#" class="btn btn-white">
                 Download Now <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -171,7 +207,7 @@
         <h1>For work</h1>
         <div class="contents">
             <div class="content1">
-                <img src="../../img2/person-in-brown-coat-holding-a-news-paper-4348556.jpg" alt="">
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
                 <h1>Microsoft 365 for bussiness</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam nemo voluptatibus nesciunt asperiores dicta!</p>
                 <a href="#" class="btn">Shop now
@@ -179,7 +215,7 @@
                 </a>
             </div>
             <div class="content2">
-                <img src="../../img2/person-in-brown-coat-holding-a-news-paper-4348556.jpg" alt="">
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
                 <h1>Create an online classroom</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam nemo voluptatibus nesciunt asperiores dicta!</p>
                 <a href="#" class="btn">Learn More
@@ -187,7 +223,7 @@
                 </a>
             </div>
             <div class="content3">
-                <img src="../../img2/person-in-brown-coat-holding-a-news-paper-4348556.jpg" alt="">
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
                 <h1>Solutions for today's challenges</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam nemo voluptatibus nesciunt asperiores dicta!</p>
                 <a href="#" class="btn">Learn More
@@ -195,7 +231,7 @@
                 </a>
             </div>
             <div class="content4">
-                <img src="../../img2/person-in-brown-coat-holding-a-news-paper-4348556.jpg" alt="">
+                <img src="./im/silhouette-of-mountain-under-cloudy-sky-4403924.jpg" alt="">
                 <h1>Get Visual Studio 2019</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam totam nemo voluptatibus nesciunt asperiores dicta!</p>
                 <a href="#" class="btn">Download now
@@ -207,9 +243,9 @@
     <section class="follow-microsoft">
         <div class="contents">
             <p>Follow Microsoft</p>
-            <a href="#"><img src="./img/social-fb.png" alt=""></a>
-            <a href="#"><img src="./img/social-twitter.png" alt=""></a>
-            <a href="#"><img src="./img/social-linkedin.png" alt=""></a>
+            <a href="#"><img src="./im/social-fb.png" alt=""></a>
+            <a href="#"><img src="./im/social-twitter.png" alt=""></a>
+            <a href="#"><img src="./im/social-linkedin.png" alt=""></a>
         </div>
     </section>
     </div>
