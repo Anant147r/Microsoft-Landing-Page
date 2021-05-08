@@ -94,6 +94,8 @@ ul{
     background-color: darkblue;
     padding:13px;
     color:white;
+    border: 1px solid white;
+    /* transition:border 1s !important; */
 }
 .heading a{
     color:white;
@@ -105,7 +107,9 @@ ul{
 }
 .heading:hover{
     text-decoration-line: underline;
-    border:.1px dotted white;
+    border:1px dotted white;
+    /* transition:border 1s !important; */
+    
 }
 
 /* Section1 */
@@ -211,6 +215,7 @@ ul{
     border-radius:50%;
     transform:translateY(-50%);
     display:none;
+    transition:all .5s
 }
 .right-arrow{
     position:absolute;
@@ -221,6 +226,7 @@ ul{
     top:50%;
     transform:translateY(-50%);
     display:none;
+    transition:all .5s
 }
 
 .arrow-container:hover .left-arrow,
@@ -232,9 +238,11 @@ ul{
 }
 .left-arrow:hover{
     box-shadow: 1px 1px 8px black;
+    transition:all .5s
 }
 .right-arrow:hover{
     box-shadow: 1px 1px 8px black;
+    transition:all .5s
 }
 /* Section 3 */
 
